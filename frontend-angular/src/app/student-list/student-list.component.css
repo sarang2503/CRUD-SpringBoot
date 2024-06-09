@@ -1,0 +1,64 @@
+/* table{
+
+    /* border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 5px; */
+/* } */ 
+.example-button-row{
+    margin-top: 20px;
+    padding: 0;
+    height: fit-content;
+    float: right;
+    margin-right: 50px;
+    display: block;
+    
+}
+.lstbtn{
+    background-color: yellow;
+    height: 40px;
+    width: 200px;
+    border: 3px yellowgreen;
+    border-radius: 5px;
+
+}
+.example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    padding: 0;
+    
+  }
+  .delbtn{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Light background color */
+    color: red;
+    border: none;
+    border-radius: 8px;
+  }
+.head{
+    position: absolute;
+
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    margin-left: 45%;
+    font-size: x-large;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(78, 4, 4, 0.1);}
+.container {
+    width: 80%;
+    margin: 50px auto; /* Center the container and add vertical spacing */
+    padding: 20px;
+    margin-top: 70px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 90px; /* Subtle shadow for depth */
+  }
+  .edtbtn{
+    color: blue;
+  }
+  
+

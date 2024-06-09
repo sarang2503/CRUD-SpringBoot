@@ -1,0 +1,41 @@
+.container {
+    width: 80%;
+    margin: 30px auto; /* Center the container and add vertical spacing */
+    padding: 20px;
+    margin-top: 70px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 90px; /* Subtle shadow for depth */
+  }
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 16px;
+  }
+button{
+    margin: 5px;
+
+}
+.last{
+    width: 50rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.example-button-row{
+    margin: 10px;
+    padding: 0;
+    height: fit-content;
+    float: left;
+    margin-left: 50px;
+    display: block;
+}
+.lstbtn{
+    background-color: yellow;
+    height: 40px;
+    width: 200px;
+    border: 3px yellowgreen;
+    border-radius: 5px;
+
+}
+

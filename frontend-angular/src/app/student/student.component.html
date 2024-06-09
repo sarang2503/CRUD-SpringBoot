@@ -1,0 +1,68 @@
+<div class="example-button-row">
+  <button class="lstbtn" classmat-flat-button color="accent" [routerLink]="['/student_list']"> Students List</button>
+</div>
+<div class="container"> 
+  
+    <form #studentForm="ngForm" (ngSubmit)="savestudform(studentForm)">
+    <p>
+        <mat-form-field appearance="outline" style="width: 100%;">
+          <mat-label>Id</mat-label>
+          <input matInput placeholder="{{stud.id}}" [(ngModel)]="stud.name" [ngModelOptions]="{standalone: true}" disabled>
+          <!-- //[(ngModel)]="stud.id" [ngModelOptions]="{standalone: true}" -->
+          <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+      </p><p>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="sirname_first" name="name" [(ngModel)]="stud.name" [ngModelOptions]="{standalone: true}">
+          <mat-icon matSuffix>Text</mat-icon>
+        </mat-form-field>
+      </p><p>
+        <mat-form-field appearance="outline" style="width: 100%" >
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="abc@gmail.com" name="email" [(ngModel)]="stud.email" [ngModelOptions]="{standalone: true}">
+          <mat-icon matSuffix>email</mat-icon>
+        </mat-form-field>
+      </p><p>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label>Contact Number</mat-label>
+          <input matInput placeholder="9763****15" name="phone" [(ngModel)]="stud.phone" [ngModelOptions]="{standalone: true}">
+          <mat-icon matSuffix>phone_number</mat-icon>
+ 
+        </mat-form-field>
+      </p>
+
+
+      <mat-form-field style="width: 100%;">
+        <mat-label>departments</mat-label>
+        <select matNativeControl [(ngModel)]="stud.department" required [ngModelOptions]="{standalone: true}">
+          <option value="computer Science"  name="department" >computer science</option>
+          <option value="english" name="department">english</option>
+          <option  vavlue="Marathi"  name="department">Marathi</option>
+          <option value="hindi" name="department">hindi</option>
+        </select>
+      </mat-form-field>
+
+
+
+      <div>
+        <mat-radio-group aria-label="Select Gender" [(ngModel)]="stud.gender" [ngModelOptions]="{standalone: true}">
+          <span>Gender: </span>
+          <mat-radio-button value="Male">Male</mat-radio-button>
+          <mat-radio-button value="Female">Female</mat-radio-button>
+        </mat-radio-group>
+        <p>Selected Gender: {{ stud.gender }}</p> <!-- Debugging output -->
+      </div>
+
+
+
+      <hr>
+      <div class="last">
+        <button type="button" mat-stroked-button  color="custom-primary" (click)="resetdata(studentForm)">Clear</button>
+        <button type="submit" mat-flat-button  color="custom-primary">Save</button>
+      </div>
+   
+
+    </form>
+      
+</div>
